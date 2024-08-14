@@ -1,0 +1,390 @@
+
+@media screen and (min-width: 776px){
+
+    body{
+        background-color: rgb(246, 241, 231);
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        margin-top: 120px; /
+    }
+
+    .shadowbox:focus {
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.9); 
+    }
+
+    .content8.shadowbox:focus, .content9.shadowbox:focus, .content4.shadowbox:focus, .content2.shadowbox:focus, .content7.shadowbox:focus, .content5.shadowbox:focus, .content6.shadowbox:focus{
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.9); 
+    }
+
+    .header {
+        padding: 2%;
+        background: white;
+        color: rgb(0, 0, 12);
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        top: 0;
+    }
+
+    .experienceheader{
+        padding: 0px;
+        grid-column: span 2; 
+        text-align: center;
+    }
+
+    .highlightsheader{
+        padding: 2%;
+        grid-column: span 2;
+        text-align: center;
+    }
+    
+    main .experience-more {
+        margin: 1px;
+        padding: 1%;
+        text-align: center;
+      }
+    main .experience-more a {
+        padding: 2%;
+        border: 1px solid #3e4f5c;
+        width: 12em;
+        display: inline-block;
+        color: #3e4f5c;
+        font-weight: bold;
+        font-size: .875em;
+        text-decoration: none;
+      }
+      main .experience-more a:hover {
+        background: #eae7e5;
+        color: #3e4f5c;
+        text-decoration: none;
+      }
+    /*these are my body styling elements*/
+
+
+    h1, h2, .hometitle {
+        text-align: center;
+        margin: auto;
+        /* padding: 2%; */
+        font-size: 155%;
+        color: rgb(236, 142, 20);
+        grid-column: span 2;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .regiontext{
+
+        text-align: center; 
+        padding: 2%;
+        font-size: 110%;
+        color: rgb(8, 8, 8);
+
+    }
+
+    .bodytext{
+
+        text-align: center; 
+        padding: 1%;
+        font-size: 110%;
+        color: rgb(8, 8, 8);
+
+    }
+
+    .bodytext.offset{
+        font-style: italic;
+    }
+
+    .introbullet{
+        text-align: left;
+        padding: 0px 150px 0px 250px;
+        font-size: 110%;
+        color: rgb(8, 8, 8);
+    }
+
+    .introbullet2{
+        text-align: left;
+        padding: 0px 0px 0px 250px;
+        font-size: 110%;
+        color: rgb(8, 8, 8);
+    }
+
+    .regionreltext{
+        font-size: 115%;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-around; /* Align items horizontally with space around them */
+        align-items: center; /* Align items vertically in the center */
+        flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+        padding: 20px; /* Add padding around the container */
+    }
+
+
+    .flex-1 {
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 10px;
+        flex: 1 1 200px; /* Grow, shrink, and set a base width for items */
+        text-align: center;
+    }
+
+    .shadowbox{
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: rgba(232, 228, 221, 0.4);
+        border: 2px solid rgb(29, 27, 26);
+        padding: 5%;
+        border-radius: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255,0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(6px);
+        text-align: center;
+        position: relative;
+        perspective: 1000px;
+        height: 450px;
+    }
+
+    .introbox{
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: rgba(248, 242, 231, 0.4);
+        border: 2px solid rgb(14, 14, 14);
+        padding: 4%;
+        border-radius: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255,0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(6px);
+        text-align: center;
+        position: relative;
+        perspective: 1000px;
+        height: 60%;
+    }
+
+    .minibox{
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: rgba(248, 242, 231, 0.4);
+        border: 2px solid rgb(14, 14, 14);
+        padding: 5%;
+        border-radius: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255,0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(6px);
+        text-align: center;
+        position: relative;
+        /* perspective: 1000px; */
+        height: 67%;
+    }
+
+    .content2.shadowbox, .content3.shadowbox, .content5.shadowbox, .content6.shadowbox, .content7.shadowbox {
+        justify-self: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255,0.3);
+        padding: 90px 60px 80px 60px;
+        border-radius: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255,0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(7px);
+        text-align: center;
+        position: relative;
+        height: 800px;
+        width: 95%;
+    }
+
+    .content4.shadowbox {
+        justify-self: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255,0.3);
+        padding: 90px 60px 80px 60px;
+        border-radius: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255,0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(7px);
+        text-align: center;
+        position: relative;
+        height: 80%;
+        width: 60%;
+    }
+
+    .content8.shadowbox, .content9.shadowbox {
+        justify-self: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255,0.3);
+        padding: 90px 60px 80px 60px;
+        border-radius: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255,0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(7px);
+        text-align: center;
+        position: relative;
+        height: 80%;
+        width: 90%;
+    }
+
+    .content1.shadowbox{
+        display: block;
+        justify-self: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255,0.3);
+        padding: 90px 60px 80px 60px;
+        border-radius: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255,0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(7px);
+        text-align: center;
+        position: relative;
+        grid-column: span 2;
+        padding-top: 2%;
+        height: 80%;
+        width: 70%;
+        
+    }
+
+    .content5.shadowbox{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .content6.shadowbox{
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .shadowbox .front-content,
+    .shadowbox .back-content {
+        position: absolute;
+        top: 5%;
+        left: 6%;
+        right: 10%;
+        bottom: 10%;
+        backface-visibility: hidden; 
+        transition: transform 0.8s ease; 
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 115%;
+       
+    }
+
+
+    /*regions code */
+
+    .smallregionpic{
+        width: 30%;
+        margin: 3%;
+    }
+
+    .smallregionpicmain{
+        width: 10%;
+        margin: 0%;
+    }
+
+    .regionheader, .regionsintro.regiontext{
+        size: 125%;
+    }
+    .SouthernRegion {
+        grid-column: 2;
+    }
+
+    .regionsintro.introbox{
+        grid-column: span 2;
+    }
+    .regionheader {
+        text-align: center;
+    }
+
+    /* footer styles */ 
+
+    .footer{
+        background-color:#637b64;
+        color: rgb(245, 236, 220);
+        padding: 1%;
+        display: flex;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .footer.copyrighticon{
+        display: flex;
+        align-items: center;
+        padding: 5%
+    }
+    .maindiv{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bodyimages{
+        width: 100%;
+        align-items: center;
+        padding: 3%;
+        justify-content: center;
+    }
+
+    .bigbodyimages{
+        width: 70%;
+        align-items: center;
+        padding: 3%;
+        justify-content: center;
+    }
+/* 
+====UX/UI Design===== */
+    .hallmarkuxcontent{
+        top: 80px
+
+    }
+}
