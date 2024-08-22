@@ -1,52 +1,76 @@
+@media screen and (min-width: 776px) {
 
-@media screen and (min-width: 776px){
-
-    body{
-        background-color: rgb(246, 241, 231);
-        font-family: 'Courier New', Courier, monospace;
+    body {
+        background-color: whitesmoke;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     }
 
     main {
-        margin-top: 120px; /
-    }
-
-    .shadowbox:focus {
-        box-shadow: 0 0 10px rgba(52, 152, 219, 0.9); 
-    }
-
-    .content8.shadowbox:focus, .content9.shadowbox:focus, .content4.shadowbox:focus, .content2.shadowbox:focus, .content7.shadowbox:focus, .content5.shadowbox:focus, .content6.shadowbox:focus{
-        box-shadow: 0 0 10px rgba(52, 152, 219, 0.9); 
+        margin-top: 120px; /* Fixed comment typo */
     }
 
     .header {
         padding: 2%;
-        background: white;
+        background-color: #637b64;
         color: rgb(0, 0, 12);
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Times New Roman', Times, serif;
         text-align: center;
         position: fixed;
         z-index: 9999;
         width: 100%;
         top: 0;
+        display: flex; /* Using flexbox for header layout */
+        justify-content: space-between; /* Pushes content to the edges */
+        align-items: center;
+        box-sizing: border-box;
     }
 
-    .experienceheader{
-        padding: 0px;
+    .header h1 {
+        margin: 0;
+        font-size: 1.5em;
+    }
+    
+    .header h1 a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .header-nav {
+        display: flex;
+        gap: 20px; /* Adds space between nav links */
+    }
+    
+    .header-nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 5px 10px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .header-nav a:hover {
+        background-color: #4a6d40;
+        border-radius: 5px;
+    }
+
+    .experienceheader {
+        padding: 0;
         grid-column: span 2; 
         text-align: center;
     }
 
-    .highlightsheader{
+    .highlightsheader {
         padding: 2%;
         grid-column: span 2;
         text-align: center;
     }
-    
+
     main .experience-more {
         margin: 1px;
         padding: 1%;
         text-align: center;
-      }
+    }
+
     main .experience-more a {
         padding: 2%;
         border: 1px solid #3e4f5c;
@@ -56,84 +80,154 @@
         font-weight: bold;
         font-size: .875em;
         text-decoration: none;
-      }
-      main .experience-more a:hover {
+    }
+
+    main .experience-more a:hover {
         background: #eae7e5;
         color: #3e4f5c;
         text-decoration: none;
-      }
-    /*these are my body styling elements*/
-
-
-    h1, h2, .hometitle {
-        text-align: center;
-        margin: auto;
-        /* padding: 2%; */
-        font-size: 155%;
-        color: rgb(236, 142, 20);
-        grid-column: span 2;
-        font-family: 'Courier New', Courier, monospace;
     }
 
-    .regiontext{
+    h1, h2 {
+        text-align: center;
+        margin: auto;
+        font-size: 155%;
+        color: #637b64;
+        grid-column: span 2;
+        font-family: 'Times New Roman', Times, serif;
+    }
 
+    .experience-box h2 {
+        font-size: 1.5em; 
+        margin-bottom: 10px; 
+        padding: 2%;
+    }
+
+    .experience-box p {
+        font-size: 1.2em; /* Larger font size for paragraphs */
+        margin: 0; /* Remove default margin */
+    }
+    
+
+    .hometitle {
+        text-align: center;
+        margin: auto;
+        font-size: 155%;
+        color: white;
+        grid-column: span 2;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .regiontext {
         text-align: center; 
         padding: 2%;
         font-size: 110%;
         color: rgb(8, 8, 8);
-
     }
 
-    .bodytext{
-
+    .bodytext {
         text-align: center; 
         padding: 1%;
         font-size: 110%;
         color: rgb(8, 8, 8);
-
     }
 
-    .bodytext.offset{
+    .bodytext.offset {
         font-style: italic;
     }
 
-    .introbullet{
+    .introbullet {
         text-align: left;
-        padding: 0px 150px 0px 250px;
+        padding: 0 150px 0 250px;
         font-size: 110%;
         color: rgb(8, 8, 8);
     }
 
-    .introbullet2{
+    .introbullet2 {
         text-align: left;
-        padding: 0px 0px 0px 250px;
+        padding: 0 0 0 250px;
         font-size: 110%;
         color: rgb(8, 8, 8);
     }
 
-    .regionreltext{
+    .regionreltext {
         font-size: 115%;
     }
 
     .flex-container {
         display: flex;
-        justify-content: space-around; /* Align items horizontally with space around them */
-        align-items: center; /* Align items vertically in the center */
-        flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
-        padding: 20px; /* Add padding around the container */
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        flex-wrap: nowrap;
     }
 
+    .bodygrid{
+        padding: 1%;
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .flex-0 {
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 3%;
+        margin: 2%;
+        flex: 1 1 200px;
+        text-align: center;
+        font-size: 1.3em;
+        line-height: 1.2;
+        align-self: center;
+        width: 90%;
+    }
     .flex-1 {
         background-color: #f1f1f1;
         border: 1px solid #ddd;
-        padding: 20px;
-        margin: 10px;
-        flex: 1 1 200px; /* Grow, shrink, and set a base width for items */
-        text-align: center;
+        padding: 3%;
+        margin: 2%;
+        flex: 1 1 200px;
+        text-align: left;
+        font-size: 1em;
+        line-height: 1.2;
+        align-self: center;
+        width: 80%;
+        height: 80%;
+
+    }
+    
+
+    .flex-2 {
+        grid-column: 2;
+        justify-content: center;
+        width: 40%;
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 3%;
+        margin: 2%;
+        align-self: center;
+
     }
 
-    .shadowbox{
+    .flex-3{
+        grid-column: 2;
+        justify-content: center;
+        width: 20%;
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 3%;
+        margin: 2%;
+        align-self: center;
+    }
+
+    .bodyimagelong{
+        width: 70%;
+        height: 70%;
+        align-items: center;
+        display: flex;
+    }
+
+    .shadowbox {
         display: block;
         justify-content: center;
         flex-wrap: wrap;
@@ -142,14 +236,11 @@
         border: 2px solid rgb(29, 27, 26);
         padding: 5%;
         border-radius: 30px;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        margin-left: 50px;
-        margin-right: 50px;
-        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        margin: 60px 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
         overflow: hidden;
-        border-top: 1px solid rgba(255, 255, 255,0.5);
-        border-left: 1px solid rgba(255, 255, 255,0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(6px);
         text-align: center;
         position: relative;
@@ -157,7 +248,7 @@
         height: 450px;
     }
 
-    .introbox{
+    .introbox {
         display: block;
         justify-content: center;
         flex-wrap: wrap;
@@ -166,22 +257,18 @@
         border: 2px solid rgb(14, 14, 14);
         padding: 4%;
         border-radius: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left: 30px;
-        margin-right: 30px;
-        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        margin: 30px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
         overflow: hidden;
-        border-top: 1px solid rgba(255, 255, 255,0.5);
-        border-left: 1px solid rgba(255, 255, 255,0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(6px);
         text-align: center;
         position: relative;
-        perspective: 1000px;
         height: 60%;
     }
 
-    .minibox{
+    .minibox {
         display: block;
         justify-content: center;
         flex-wrap: wrap;
@@ -190,35 +277,28 @@
         border: 2px solid rgb(14, 14, 14);
         padding: 5%;
         border-radius: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left: 30px;
-        margin-right: 30px;
-        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        margin: 30px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
         overflow: hidden;
-        border-top: 1px solid rgba(255, 255, 255,0.5);
-        border-left: 1px solid rgba(255, 255, 255,0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(6px);
         text-align: center;
         position: relative;
-        /* perspective: 1000px; */
         height: 67%;
     }
 
     .content2.shadowbox, .content3.shadowbox, .content5.shadowbox, .content6.shadowbox, .content7.shadowbox {
         justify-self: center;
         align-items: center;
-        background-color: rgb(255, 255, 255,0.3);
+        background-color: rgb(255, 255, 255, 0.3);
         padding: 90px 60px 80px 60px;
         border-radius: 30px;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        margin-left: 50px;
-        margin-right: 50px;
-        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        margin: 60px 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
         overflow: hidden;
-        border-top: 1px solid rgba(255, 255, 255,0.5);
-        border-left: 1px solid rgba(255, 255, 255,0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(7px);
         text-align: center;
         position: relative;
@@ -229,17 +309,14 @@
     .content4.shadowbox {
         justify-self: center;
         align-items: center;
-        background-color: rgb(255, 255, 255,0.3);
+        background-color: rgb(255, 255, 255, 0.3);
         padding: 90px 60px 80px 60px;
         border-radius: 30px;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        margin-left: 50px;
-        margin-right: 50px;
-        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        margin: 60px 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
         overflow: hidden;
-        border-top: 1px solid rgba(255, 255, 255,0.5);
-        border-left: 1px solid rgba(255, 255, 255,0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(7px);
         text-align: center;
         position: relative;
@@ -250,17 +327,14 @@
     .content8.shadowbox, .content9.shadowbox {
         justify-self: center;
         align-items: center;
-        background-color: rgb(255, 255, 255,0.3);
+        background-color: rgb(255, 255, 255, 0.3);
         padding: 90px 60px 80px 60px;
         border-radius: 30px;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        margin-left: 50px;
-        margin-right: 50px;
-        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        margin: 60px 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
         overflow: hidden;
-        border-top: 1px solid rgba(255, 255, 255,0.5);
-        border-left: 1px solid rgba(255, 255, 255,0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(7px);
         text-align: center;
         position: relative;
@@ -268,21 +342,18 @@
         width: 90%;
     }
 
-    .content1.shadowbox{
+    .content1.shadowbox {
         display: block;
         justify-self: center;
         align-items: center;
-        background-color: rgb(255, 255, 255,0.3);
+        background-color: rgb(255, 255, 255, 0.3);
         padding: 90px 60px 80px 60px;
         border-radius: 30px;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        margin-left: 50px;
-        margin-right: 50px;
-        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        margin: 60px 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
         overflow: hidden;
-        border-top: 1px solid rgba(255, 255, 255,0.5);
-        border-left: 1px solid rgba(255, 255, 255,0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(7px);
         text-align: center;
         position: relative;
@@ -290,15 +361,14 @@
         padding-top: 2%;
         height: 80%;
         width: 70%;
-        
     }
 
-    .content5.shadowbox{
+    .content5.shadowbox {
         grid-column: 1;
         grid-row: 3;
     }
 
-    .content6.shadowbox{
+    .content6.shadowbox {
         grid-column: 2;
         grid-row: 3;
     }
@@ -318,73 +388,137 @@
         justify-content: center;
         align-items: center;
         font-size: 115%;
-       
     }
 
-
-    /*regions code */
-
-    .smallregionpic{
+    /* Regions code */
+    .smallregionpic {
         width: 30%;
         margin: 3%;
     }
 
-    .smallregionpicmain{
+    .smallregionpicmain {
         width: 10%;
-        margin: 0%;
+        margin: 0;
     }
 
-    .regionheader, .regionsintro.regiontext{
-        size: 125%;
+    .regionheader, .regionsintro.regiontext {
+        font-size: 125%;
     }
+
     .SouthernRegion {
         grid-column: 2;
     }
 
-    .regionsintro.introbox{
+    .regionsintro.introbox {
         grid-column: span 2;
     }
+
     .regionheader {
         text-align: center;
     }
 
-    /* footer styles */ 
-
-    .footer{
-        background-color:#637b64;
+    /* Footer styles */
+    .footer {
+        background-color: #637b64;
         color: rgb(245, 236, 220);
         padding: 1%;
         display: flex;
         font-family: 'Courier New', Courier, monospace;
     }
 
-    .footer.copyrighticon{
+    .footer.copyrighticon {
         display: flex;
         align-items: center;
-        padding: 5%
+        padding: 5%;
     }
-    .maindiv{
+
+    .maindiv {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .bodyimages{
+    .bodyimages {
         width: 100%;
         align-items: center;
         padding: 3%;
         justify-content: center;
     }
 
-    .bigbodyimages{
+    .bigbodyimages {
         width: 70%;
         align-items: center;
         padding: 3%;
         justify-content: center;
     }
-/* 
-====UX/UI Design===== */
-    .hallmarkuxcontent{
-        top: 80px
 
+    /* Base styles for the experience grid */
+    .experience-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: span 2;
+        gap: 20px;
+        margin: 20px;
+        padding: 20px;
+        justify-items: center;
+    }
+
+    /* Styles for individual experience boxes */
+    .experience-box {
+        background-color: rgba(248, 242, 231, 0.4);
+        border: 2px solid rgb(14, 14, 14);
+        border-radius: 30px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+        padding: 20px;
+        text-align: center;
+        min-height: 250px;
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .bodyimages {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .bigbodyimages {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    /* Text and link styles */
+    .regionheader {
+        font-size: 1.25em;
+        color: #637b64;
+    }
+
+    .regiontext.offset {
+        font-style: italic;
+    }
+
+    a.regiontext {
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid #3e4f5c;
+        color: #3e4f5c;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.875em;
+        margin-top: auto;
+    }
+
+    a.regiontext:hover {
+        background: #eae7e5;
+        color: #3e4f5c;
+    }
+
+    /* UX/UI Design */
+    .subpagebody {
+        top: 300px;
     }
 }

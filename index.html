@@ -10,11 +10,18 @@
     </style>
     <script src="https://kit.fontawesome.com/775fed8ed9.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header"> 
-            <a href="index.html" class="hometitle"> Katherine Hattersley </a>
+    <header class = "header">
+        <div class="header-content"> 
+            <h1>
+            <a href="index.html" class="hometitle"> KATHERINE HATTERSLEY </a>
+        </h1>
+        <nav class="header-nav">
+            <a href="#highlights">Highlights</a>
+            <a href="#experiences">Experiences</a>
+        </nav>
         </div>
     </header>
     <main id="main">
@@ -22,13 +29,14 @@
             <div class="regionsintro introbox" tabindex="0">
                 <div class="front-content">
                     <h1>ABOUT ME</h1>
-                    <p class="bodytext"> I'm Katherine Hattersley, a rising senior at the University of Michigan majoring in English and User Experience Design. I am passionate about data, consumer exploration, user experience, and design. </p>
+                    <p class="bodytext"> I'm Katherine Hattersley, a rising senior at the University of Michigan majoring in English and User Experience Design. I'm currently a longterm UX Design and Research intern at Hallmark Cards. </p>
+                    <p class="bodytext">I'm passionate about data, consumer exploration, user experience, and design.</p>
                     <p class="experience-more"><a href="https://www.linkedin.com/in/katherine-hattersley/" target="_blank">See more on LinkedIn</a></p>
                 </div>
             </div>
-            <header class="highlightsheader"> 
+            <header class="highlightsheader" id = "highlights"> 
                 <div> 
-                    <h1> Highlights </h1>
+                    <h1>Highlights</h1>
                 </div>
             </header>
             <div class="NorthernRegion minibox" tabindex="0">
@@ -61,40 +69,52 @@
                     </p>
                 </div>
             </div>
-            <header class="experienceheader"> 
+
+            <header class="experienceheader" id = "experiences"> 
                 <div> 
-                    <h1> Experience </h1>
+                    <h1>Experience</h1>
                 </div>
             </header>
-            <div class="NorthernRegion shadowbox" tabindex="0">
-                <div class="front-content">
-                    <h2 class="regionheader">UX/UI Design</h2> <br><br>
-                    <img class="bodyimages" src="images/Option E -- Homepage.png" alt="UX/UI Design Image"> 
-                    <a href="uxdesign.html" class="regiontext offset"> See More -> </a>
+            <div class="experience-grid">
+                <div class="experience-box">
+                    <div class="front-content">
+                        <h2 class="regionheader">UX/UI Design</h2>
+                        <a href="uxdesign.html" class="regiontext offset">See More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="SouthernRegion shadowbox" tabindex="0">
-                <div class="front-content">
-                    <h2 class="regionheader">UX Research</h2> <br>
-                    <img class="bigbodyimages" src="images/Nav Option E Taxonomy.png" alt="UX Research Image"> <br>
-                    <a href="uxdesign.html" class="regiontext offset"> See More -> </a>
+                <div class="experience-box">
+                    <div class="front-content">
+                        <h2 class="regionheader">UX Research</h2>
+                        <a href="uxdesign.html" class="regiontext offset">See More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="EasternRegion shadowbox" tabindex="0">
-                <div class="front-content">
-                    <h2 class="regionheader">Creative Strategy</h2> <br>
-                    <img class="bigbodyimages" src="images/QT Nav Homepage Cropped.png" alt="Creative Strategy Image"> <br>
-                    <a href="uxdesign.html" class="regiontext offset"> See More -> </a>
+                <div class="experience-box">
+                    <div class="front-content">
+                        <h2 class="regionheader">Creative Strategy</h2>
+                        <a href="uxdesign.html" class="regiontext offset">See More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="CentralRegion shadowbox" tabindex="0">
-                <div class="front-content">
-                    <h2 class="regionheader">Loyalty and Consumer Journey</h2> <br>
-                    <img class="bodyimages" src="images/Cooking Connect -- Crown Rewards - Copy.png" alt="Loyalty and Consumer Journey Image"> 
-                    <a href="uxdesign.html" class="regiontext offset"> See More -> </a>
+                <div class="experience-box">
+                    <div class="front-content">
+                        <h2 class="regionheader">Loyalty and Consumer Journey</h2>
+                        <a href="uxdesign.html" class="regiontext offset">See More</a>
+                    </div>
                 </div>
+                <div class="experience-box">
+                    <div class="front-content">
+                        <h2 class="regionheader">Asset Management & Organization</h2>
+                        <a href="uxdesign.html" class="regiontext offset">See More</a>
+                    </div>
+                </div>
+                <div class="experience-box">
+                    <div class="front-content">
+                        <h2 class="regionheader">Written Expression</h2>
+                        <a href="uxdesign.html" class="regiontext offset">See More</a>
+                    </div>
+                </div>
+                <!-- Add more experience boxes as needed -->
             </div>
-        </div>
+            
     </main>
     <footer class="footer">
         <i class="fas fa-copyright fa-inverse copyrighticon"></i> <p>Web Page Design & Content by Katherine Hattersley</p>
