@@ -6,7 +6,7 @@
     }
 
     main {
-        margin-top: 120px; /* Fixed comment typo */
+        margin-top: 145px; 
     }
 
     .header {
@@ -14,13 +14,13 @@
         background-color: #637b64;
         color: rgb(0, 0, 12);
         font-family: 'Times New Roman', Times, serif;
-        text-align: center;
+        text-align: left;
         position: fixed;
         z-index: 9999;
         width: 100%;
         top: 0;
-        display: flex; /* Using flexbox for header layout */
-        justify-content: space-between; /* Pushes content to the edges */
+        display: flex;
+        justify-content: space-between; 
         align-items: center;
         box-sizing: border-box;
     }
@@ -28,6 +28,7 @@
     .header h1 {
         margin: 0;
         font-size: 1.5em;
+        text-align: left;
     }
     
     .header h1 a {
@@ -37,7 +38,8 @@
     
     .header-nav {
         display: flex;
-        gap: 20px; /* Adds space between nav links */
+        gap: 20px; 
+        text-align: left;
     }
     
     .header-nav a {
@@ -127,6 +129,7 @@
 
     .bodytext {
         text-align: center; 
+        line-height: 1.4em;
         padding: 1%;
         font-size: 110%;
         color: rgb(8, 8, 8);
@@ -477,6 +480,10 @@
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
+    }
+
+    .hidden {
+        visibility: hidden;
     }
 
     .bodyimages {
