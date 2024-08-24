@@ -99,6 +99,10 @@
         font-family: 'Times New Roman', Times, serif;
     }
 
+    h3{ 
+        text-align: center;
+    }
+
     .experience-box h2 {
         font-size: 1.5em; 
         margin-bottom: 10px; 
@@ -157,6 +161,9 @@
         font-size: 115%;
     }
 
+    .bulletblock{
+        margin-bottom: 1%;
+    }
     .flex-container {
         display: flex;
         justify-content: center;
@@ -170,6 +177,63 @@
         padding: 1%;
         display: flex;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .stiff-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2%;
+    }
+
+    .stiff-4{
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 3%;
+        margin: 2%;
+        text-align: left;
+        font-size: 1em;
+        line-height: 1.2;
+        align-self: center;
+        grid-column: 2;
+
+    }
+
+    .stiff-3{
+        grid-column: 2;
+        justify-self: center;
+        width: 60%;
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 4%;
+        margin: 1%;
+        align-self: center;
+    }
+
+    .stiff-2{ 
+        display: grid;
+        grid-column: 3;
+        justify-content: center;
+        width: 50%;
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 3%;
+        margin: 2%;
+        align-self: center;
+
+    }
+
+    .stiff-1{
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 3%;
+        margin: 2%;
+        text-align: left;
+        font-size: 1em;
+        line-height: 1.2;
+        align-self: center;
+        width: 90%;
+        height: 90%;
+
     }
 
     .flex-0 {
@@ -196,7 +260,6 @@
         align-self: center;
         width: 80%;
         height: 80%;
-
     }
     
 
@@ -223,6 +286,22 @@
         align-self: center;
     }
 
+    .flex-4 {
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 3%;
+        margin: 2%;
+        flex: 1 1 200px;
+        text-align: left;
+        font-size: 1em;
+        line-height: 1.2;
+        align-self: center;
+        width: 50%;
+
+    }
+    .flex-button{ 
+        grid-column: 1;
+    }
     .bodyimagelong{
         width: 70%;
         height: 70%;
@@ -418,6 +497,16 @@
 
     .regionheader {
         text-align: center;
+    }
+
+    .logo{ 
+        justify-self: center;
+        width: 60%;
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 4%;
+        margin: 1%;
+        align-self: center;
     }
 
     /* Footer styles */
