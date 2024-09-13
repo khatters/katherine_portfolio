@@ -347,7 +347,7 @@
         backdrop-filter: blur(6px);
         text-align: center;
         position: relative;
-        height: 60%;
+        height: 65%;
     }
 
     .minibox {
@@ -367,7 +367,7 @@
         backdrop-filter: blur(6px);
         text-align: center;
         position: relative;
-        height: 67%;
+        height: 70%;
     }
 
     .expandbox {
